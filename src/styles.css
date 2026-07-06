@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body-md overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  }
+
+  .swipe-row {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 24px;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+
+  .swipe-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .swipe-card {
+    flex: 0 0 min(82vw, 360px);
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 767px) {
+  .py-xl {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .px-gutter {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .p-lg {
+    padding: 24px !important;
+  }
+
+  .px-lg {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .py-md {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .gap-lg {
+    gap: 28px !important;
+  }
+
+  .mb-xl {
+    margin-bottom: 36px !important;
+  }
+
+  .text-display-lg-mobile {
+    font-size: 30px !important;
+    line-height: 1.14 !important;
+  }
+
+  .text-headline-lg,
+  .text-headline-lg-mobile {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+  }
+
+  .text-headline-md {
+    font-size: 19px !important;
+    line-height: 1.25 !important;
+  }
+
+  .text-body-lg {
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+
+  .text-body-md {
+    font-size: 14.5px !important;
+    line-height: 1.55 !important;
+  }
+
+  .text-label-md {
+    font-size: 12.5px !important;
+    line-height: 1.35 !important;
+  }
+
+  .swipe-row {
+    gap: 16px;
+    scroll-padding-inline: 18px;
+  }
+
+  .swipe-card {
+    flex-basis: min(78vw, 320px);
+  }
+}
