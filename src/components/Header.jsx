@@ -33,7 +33,7 @@ export default function Header() {
         </nav>
         <div className="flex items-center gap-md">
           <a
-            className="bg-primary text-on-primary px-sm sm:px-md py-xs sm:py-sm rounded-lg font-label-md text-[11px] sm:text-label-md hover:opacity-90 active:scale-95 transition-all"
+            className="bg-primary text-on-primary px-4 sm:px-md py-2 sm:py-sm min-h-10 rounded-lg font-label-md text-[12px] sm:text-label-md leading-tight hover:opacity-90 active:scale-95 transition-all"
             href="/#appointment"
           >
             Book Appointment

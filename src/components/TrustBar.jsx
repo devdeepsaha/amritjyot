@@ -5,12 +5,12 @@ export default function TrustBar({ className = "", innerClassName = "" }) {
   return (
     <section className={`py-sm md:py-md bg-white border-y border-outline-variant ${className}`}>
       <div
-        className={`max-w-container-max mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-xs md:gap-md ${innerClassName}`}
+        className={`max-w-container-max mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-sm md:gap-md ${innerClassName}`}
       >
-        <div className="flex items-center gap-sm md:gap-md">
+        <div className="flex items-center justify-center gap-sm md:gap-md text-center">
           <RatingStars half />
           <span className="font-headline-md text-headline-md text-primary">4.9 Rating</span>
-          <span className="text-on-surface-variant border-l border-outline-variant pl-sm md:pl-md">
+          <span className="text-on-surface-variant border-l border-outline-variant pl-sm md:pl-md max-w-[130px] sm:max-w-none">
             based on 127 Google Reviews
           </span>
         </div>
