@@ -32,13 +32,14 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-md">
-          <a
-            className="bg-primary text-on-primary px-4 sm:px-md py-2 sm:py-sm min-h-10 rounded-lg font-label-md text-[12px] sm:text-label-md leading-tight hover:opacity-90 active:scale-95 transition-all"
-            href="/#appointment"
-          >
-            Book Appointment
-          </a>
-        </div>
+  <a
+    // Added 'inline-flex', 'justify-center', and 'items-center' to perfectly center the text visually
+    className="inline-flex justify-center items-center bg-primary text-on-primary px-4 sm:px-md py-2 sm:py-sm min-h-10 rounded-md font-label-md text-[12px] sm:text-label-md leading-tight hover:opacity-90 active:scale-95 transition-all"
+    href="https://amritjyot.vercel.app/#appointment" 
+  >
+    Book Appointment
+  </a>
+</div>
       </div>
     </header>
   );
